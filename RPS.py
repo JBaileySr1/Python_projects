@@ -13,11 +13,11 @@ def play():
 
     return 'You lost!'
 
-    def winner(player_one, player_two):
-        #return true if player_one wins
-        # r > s, s > p, and p > r
-        if (player_one == 'r' and player_two == 's') or (player_one == 's' and player_two == 'p') \
-           or (player_one == 'p' and player_two == 'r'):
-            return True
+def winner(player_one, player_two):
+    #return true if player_one wins
+    # r > s, s > p, and p > r
+    if (player_one == 'r' and player_two == 's') or (player_one == 's' and player_two == 'p') \
+        or (player_one == 'p' and player_two == 'r'):
+        return True
 
-    print(play())
+print(play())
